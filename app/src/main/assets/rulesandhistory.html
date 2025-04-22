@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Straight Pool Berechnung</title>
+
+    <!-- <link rel="stylesheet" crossorigin href="/scr/index-Z4rGmmZg.css"> -->
+    <link rel="stylesheet" href="./straightpool.css">
+</head>
+
+<body>
+
+<div class="container">
+    <div class="header">
+
+        <div class="header-logo">
+            <img src="./img/emder_billard_club-logo.png" alt="Straight Pool Logo" class="shooters_logo">
+        </div>
+
+        <div class="header-headline">
+        <h1>Regeln und Geschichte</h1>
+        </div>
+
+        <div class="menu-icon" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+
+        <nav id="navLinks" class="nav-links">
+            <div class="close-icon" onclick="closeMenu()">
+                <a href="index.html">Home</a>                
+                <a href="#" onclick="saveResult()">Ergebnis speichern</a>
+                <a href="description.html">Regeln und Geschichte</a>
+                <a href="mailto:detlef.pabst@gmail.com?subject=Feedback%20zur%20Straight%20Pool%20App&body=Hallo,%20ich%20möchte%20Feedback%20zur%20Straight%20Pool%20App%20geben.">Feedback</a>
+            </div>
+
+        </nav>
+
+</div>
+    <div class="description"> 
+        <h1>Regeln und Geschichte</h1>
+        <p>14 und 1 endlos (kurz: 14/1 oder 14/1e; im Englischen: Straight Pool) 
+        ist eine Disziplin des Poolbillards, bei der mit fünfzehn Objektbällen 
+        (die Farbigen) und einem Spielball (die Weiße) auf einem Poolbillardtisch 
+        gespielt wird. Es ist ein Punktespiel, bei dem es darum geht, eine bestimmte 
+        Punktzahl zu erreichen. Man darf jeden Objektball versenken und bekommt dafür 
+        immer einen Punkt, für ein Foul bekommt man einen Punkt abgezogen. Negative Punkte sind möglich. 
+        Der Name 14 und 1 endlos kommt daher, dass man alle Objektbälle bis auf einen versenkt. 
+        Dieser bleibt übrig, und das Rack wird wieder aufgebaut (der Platz auf dem Fußpunkt bleibt frei) 
+        und man darf weiterspielen. Dieser letzte Objektball sollte so liegen, dass man 
+        anschließend diesen versenken und gleichzeitig das Rack lösen kann, um danach weiterzuspielen.</p>
+        
+        <h2>Geschichte</h2>
+        <p>Die Entwicklung von Poolbillard (Pocket Billard) im Entstehungsland USA brachte 
+        in den 1870er Jahren zunächst das 61-Pool hervor, wobei man die Zahlen auf den Kugeln, 
+        welche versenkt wurden, addierte (1 bis 15, zusammen = 120), womit der Spieler, welcher zuerst 
+        61 erreichte, das Spiel gewann. Die ersten US-Pocket-Billard-Meisterschaften 
+        1878 wurden im 61-Pool ausgetragen. Sieger war der Kanadier Cyrille Dion. In der Weiterentwicklung
+         bildete sich Continuous Pool heraus, welches dem späteren 14/1 bereits sehr ähnlich war: 
+         Alle Kugeln hatten die Wertigkeit von einem Punkt – Sieger eines Spiels war der Spieler, 
+         welcher am Ende mehr versenkte Kugeln auf seinem Konto hatte. Gespielt wurde auf ein bestimmtes 
+         Ausspielziel (Anzahl gewonnener Spiele). Aus taktischen Gründen jedoch geriet diese Variante schnell
+         zu einem rein defensiven Spiel. Jerome Keogh, mehrfacher Continuous-Pool-Meister, schlug daraufhin vor, 
+         die letzte auf dem Tisch verbliebene Kugel dort zu belassen, die restlichen 14 Kugeln wieder im Dreieck
+         aufzubauen und per erfolgreichem Stoß (Versenken der „verbliebenen Kugel“) das Dreieck gleichzeitig mit
+         dem Spielball aufzusprengen, um weiter am Tisch zu verbleiben. Defensives Spiel war weiterhin möglich,
+         doch das Angriffsspiel überwog bei weitem („endloses“ Versenken von Bällen bis zu einem bestimmten
+         Ausspielziel, zum Beispiel 150 Bälle). 14/1 endlos wurde in den USA zum „Champion’s Game“ 
+         im Jahre 1912 – und gleichzeitig im selben Jahr in den Status einer Weltmeisterschaft erhoben.
+         Als erster 14/1-Meister ging Edward Ralph in die Geschichte ein. Die WM 14/1 wurde bis 1990 in 
+         den USA ausgetragen, im selben Jahr durch das bis dahin schon länger dominierende 9-Ball als 
+         WM-Pool-Variante endgültig abgelöst. Im Jahr 2006 erfuhr 14/1 eine Renaissance. Vor allem durch die Popularität, 
+         welche dieser Variante in Europa seit den 1970er Jahren zuteilwurde, kam es zu einer Neuauflage
+         als Weltmeisterschaft. Sie wird seitdem jährlich ausgetragen.</p>
+         
+        <h2>Regeln</h2>
+        <p>14/1 ist ebenso wie 8-Ball ein Ansagespiel. Das bedeutet, dass man vorher ansagen muss, welche Kugel
+         in welche Tasche gespielt wird, wenn es nicht offensichtlich ist. Das Spiel über Banden und Kombinationen
+         sind laut offiziellem Regelwerk niemals offensichtlich und müssen stets angesagt werden. Wenn man solche
+         Kugeln nicht ansagt, führt das zum Aufnahmeverlust. Ein Spieler darf weiterspielen, solange er mit einem
+         „korrekten Stoß“ (s.&nbsp;u.) die angesagte Kugel „locht“. Versenkt ein Spieler in einem regulären Stoß 
+         neben der eigentlich angesagten Kugel noch weitere Objektbälle, erhält er einen zusätzlichen Punkt je Kugel.</p>
+        
+        <h2>Aufbau und Break</h2>
+        <p>Beispiel für ein 14 und 1 Rack</p>
+        <p>Die Kugeln werden zu Beginn im Dreieck aufgebaut. Die Anordnung ist frei wählbar, wobei man häufig
+         die 1 an der vom Spieler aus gesehen linken Ecke und die 5 an der vom Spieler aus gesehen rechten Ecke 
+         des Dreiecks platziert. Der beginnende Spieler hat das Recht, die Position der „Weißen“ innerhalb des
+         Kopffeldes (oberes Viertel des Tisches) zu wählen. Beim Anstoß, dem sogenannten Break, müssen mindestens
+         zwei der Objektbälle und die „Weiße“ eine Bande berühren, oder ein Objektball muss (korrekt angesagt) 
+         versenkt werden. Ist beides nicht der Fall, erhält der aufnehmende Spieler zwei Strafpunkte und der
+         Gegner kann entweder die Lage übernehmen oder den Neuaufbau einfordern (und hierbei auch über das
+         Anstoßrecht entscheiden). Falls der Gegner verlangt, dass der Spieler einen neuen Eröffnungsstoß 
+         ausführt, so ist es immer noch dieselbe Aufnahme. Die Pflicht, beim 14/1-Break Kugel und Tasche anzusagen,
+         führt in der Praxis oft zu Sicherheitsanstößen. Das Ansagen einer bestimmten Kugel in eine bestimmte 
+         Tasche beim Break ist ein Kunststoß. Fällt bei einem ansonsten korrekten Eröffnungsstoß der Spielball, 
+         wird dies als reguläres Foul geahndet und mit einem Minuspunkt bestraft. Der Gegner bekommt in diesem 
+         Fall „Ball in Hand“ aus dem Kopffeld heraus, darf aber nur die Objektbälle anspielen, deren Mittelpunkt
+         außerhalb des Kopffeldes liegen, es sei denn, alle auf dem Tisch verbliebenen Objektbälle befinden sich 
+         im Kopffeld. Die Objektbälle bleiben unverändert, nicht korrekt versenkte Objektbälle werden jedoch 
+         wieder aus der Tasche genommen und am Fußpunkt aufgebaut. Sollte der Fußpunkt besetzt sein, wird die 
+         Kugel auf den nächsten freien Platz auf der direkten Linie von Fußpunkt zu Fußbande aufgesetzt.</p>
+         
+        <h2>Wiederaufbau der Kugeln</h2>
+        <h3>Typisches Break 14. und 1. Kugel</h3>
+        
+        <figure class="table">
+            <table>
+                <colgroup>
+                    <col style="width:27.98%;">
+                    <col style="width:20.89%;">
+                    <col style="width:24.86%;">
+                    <col style="width:26.27%;">
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <td rowspan="2">
+                            <p style="text-align:center;"><strong>Position des 15. Balls</strong></p>
+                        </td>
+                        <td colspan="3">
+                            <p style="text-align:center;"><strong>Position des Spielballs</strong></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p style="text-align:center;"><strong>Im Dreieck</strong></p>
+                        </td>
+                        <td>
+                            <p style="text-align:center;"><strong>Weder im Dreieck noch</strong><br><strong>auf dem Kopfpunkt</strong></p>
+                        </td>
+                        <td>
+                            <p style="text-align:center;"><strong>Auf dem Kopfpunkt</strong></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Im Dreieck</td>
+                        <td>15. Ball: Fußpunkt<br>Spielball: Kopffeld</td>
+                        <td>15. Ball: Kopfpunkt<br>Spielball: bleibt liegen</td>
+                        <td>15. Ball: Mittelpunkt<br>Spielball: bleibt liegen</td>
+                    </tr>
+                    <tr>
+                        <td>versenkt</td>
+                        <td>15. Ball: Fußpunkt<br>Spielball: Kopffeld</td>
+                        <td>15. Ball: Fußpunkt<br>Spielball: bleibt liegen</td>
+                        <td>15. Ball: Fußpunkt<br>Spielball: bleibt liegen</td>
+                    </tr>
+                    <tr>
+                        <td>Im Kopffeld, aber<br>nicht auf dem Kopfpunkt</td>
+                        <td>15. Ball: bleibt liegen<br>Spielball: Kopfpunkt</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>Weder im Kopffeld<br>noch im Dreieck</td>
+                        <td>15. Ball: bleibt liegen<br>Spielball: Kopffeld</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>Auf dem Kopfpunkt</td>
+                        <td>15. Ball: bleibt liegen<br>Spielball: Mittelpunkt</td>                        
+                    </tr>
+                </tbody>
+            </table>
+        </figure>
+        
+        <h2>Korrekter Stoß</h2>
+        
+        <p>Für einen korrekten Stoß reicht es aus, einen beliebigen Objektball auf dem Tisch anzuspielen 
+        und nach der Kollision mit einer beliebigen Kugel mindestens eine Bande anzulaufen bzw. zu lochen.</p>
+        
+        <p>Ein Foul liegt vor, wenn:</p>
+        
+        <p>die „Weiße“ versenkt wird;<br>die „Weiße“ keinen Objektball berührt;<br>nach der ersten Kollision
+         keine Kugel eine Bande berührt oder versenkt wird;<br>eine Kugel vom Tisch fällt (oder auf der Bande 
+         liegenbleibt);<br>eine Kugel mit dem Queue berührt oder verschoben wird;<br>der Spieler mit dem Körper 
+         oder mit der Kleidung eine Kugel berührt.</p>
+         
+        <p>Sollten in einem Stoß mehrere Fouls begangen werden, wird dies trotzdem nur als ein Foul gewertet.</p>
+        <p>Bleibt die „Weiße“ oder eine andere Kugel direkt auf dem Rand (auf der Bande) des Tisches liegen, 
+        liegt ebenfalls ein Foul vor. Die Kugel gilt dann als "vom Tisch gefallen", da die Banden nicht zur
+         Spielfläche gehören, sondern diese lediglich abgrenzen. Rollt eine Kugel jedoch kurzzeitig über die Bande 
+         und kommt wieder auf die Spielfläche zurück, ist der Stoß korrekt.</p>
+         
+        <p>Fallen nur unangesagte Objektbälle, werden sie wieder aufgesetzt. Es erfolgt keine Bestrafung.</p>
+        
+        <h2>Wertung</h2>
+        <p>Das Abziehen von Punkten kann zu einem negativen Punktestand führen (−1, −2, −15 etc.). Versenkt ein
+         Spieler einen Objektball und begeht dabei ein Foul, so wird dieser wieder aufgesetzt, ohne zu zählen, 
+         und ein Punkt wird vom Punktestand abgezogen, den er vor dem Stoß hatte.</p>
+         
+        <p>Begeht ein Spieler 3 Fouls in Folge oder ein absichtliches Foul, erhält er 15 Strafpunkte zusätzlich. 
+        Als absichtliches Foul im Sinne dieser Regel zählt z.B. das bewusste Hindern einer Kugel beim Fall
+         durch Aufhalten mit der Hand o.ä. – taktische Fouls wie z.B. das absichtliche Verfehlen des 
+         Pulks sind jedoch Bestandteil des Spiels und zählen demnach nur einen Strafpunkt.</p>
+        
+        <h2>Höchste Serie</h2>
+        <p>Den offiziellen Rekord für die höchste Serie im 14 und 1 hält Jayson Shaw aus Schottland mit 669 Kugeln
+         (2022).[2] Zuvor war der US-Amerikaner John Schmidt mit einer Serie von 626 Kugeln am Stück Rekordinhaber
+         (Mai 2019), der den über 50. Jahre alten Rekord von Willie Mosconi überboten hatte (526 Kugeln, März 1954).</p>
+       
+    </div>
+    <div class="controls">
+        <button><a href="index.html">Home</a></button>
+    </div>
+
+</div>
+            <script src="./straightpool.js"></script>
+
+</body>
+
+</html>

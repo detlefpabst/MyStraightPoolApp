@@ -1,0 +1,593 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #006E2F;
+  padding: 20px;
+  color: #333;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 60%;
+  background: #E8E8E8;
+  padding: 24px;
+  border-radius: 60px;
+  border: 5px;
+  border-style: double;
+  box-shadow: 0 0 30px rgb(245, 244, 244);
+}
+
+/* Navigation */
+
+.menu-icon {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  width: 40px;
+  margin-bottom: 16px;
+
+}
+
+.bar {
+  height: 4px;
+  background-color: #111111;
+  border: solid #111111 1px;
+  border-radius: 4px;
+  border-style: ridge;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+.nav-links {
+  display: none;
+  flex-direction: column;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  padding: 5px;
+  border-bottom: 1px solid #ddd;
+}
+
+.nav-links a:hover {
+  background-color: #f0f0f0;
+}
+
+.close-icon {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  font-size: 24px;
+  color: #333;
+}
+
+h1 {
+  margin-bottom: 16px;
+}
+
+.hrader {
+  margin-bottom: 16px;
+}
+
+.header-logo {
+
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+}
+
+
+.playGoal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.playGoal input[type="number"] {
+  width: 50px;
+  font-size: 16px;
+  text-align: center;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.playGoal button {
+  display: none;
+  width: 55%;
+  margin-bottom: 8px;
+}
+
+.header-headline {
+  font-size: 32px;
+  color: #007BFF;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.shooters_logo {
+  width: 90%;
+}
+
+.player-section {
+  margin-top: 20px;
+  padding: 10px;
+  border: 5px solid #111111;
+  border-radius: 16px;
+  border-style: ridge;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.player-name {
+  width: 64%;
+}
+
+.player-name input[type="text"] {
+  width: 90%;
+}
+
+.foul-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.fouls-reset {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+
+.fouls-reset button {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.fouls-reset button:hover {
+  background-color: #0056b3;
+}
+
+.foul-section span {
+  border: #007BFF solid 1px;
+  border-radius: 4px;
+  padding: 8px 8px;
+  background-color: white;
+}
+
+.foul-section button {
+  background-color: red;
+}
+
+input[type="number"],
+input[type="text"] {
+  margin-bottom: 8px;
+  padding: 8px 8px;
+  font-size: 16px;
+  text-align: center;
+  width: 50px;
+  border-radius: 4px;
+  border: #007BFF solid 1px;
+}
+
+button {
+  margin: 5px;
+  padding: 8px 8px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #007BFF;
+  color: white;
+  border: 1px;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:disabled {
+  background-color: #f80303;
+  cursor: not-allowed;
+}
+
+table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+table,
+th,
+td {
+  border: 1px solid #ccc;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: center;
+}
+
+.controls {
+  border-top: 1px solid #111111;
+  text-orientation: none;
+  color: white;
+  margin-top: 20px;
+  padding-top: 16px;
+  text-align: center;
+}
+
+.controls a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+
+.popup-container {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+}
+
+.description {
+  font-size: 12px;
+  text-align: justify;
+  padding: 16px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+
+/* Media Queries */
+
+@media (max-width: 655px) {
+  .header-headline {
+    font-size: 20px;
+  }
+
+  .close-icon {
+    font-size: 16px;
+    margin-bottom: 24px;
+    margin-left: 16px;
+  }
+
+}
+
+@media (max-width: 580px) {
+  .container {
+    width: 600px;
+    padding: 5px;
+    border-radius: 10px;
+  }
+
+  .shooters_logo {
+    width: 90%;
+  }
+
+  .header-headline {
+    font-size: 16px;
+  }
+
+
+  .menu-icon {
+    margin-left: 16px;
+    margin-bottom: 16px;
+  }
+
+
+  .close-icon {
+    margin-left: 16px;
+  }
+
+
+  input[type="number"],
+  input[type="text"] {
+    width: 85%;
+    font-size: 14px;
+  }
+
+  #playGoal {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .playGoal input[type="number"] {
+    width: 50px;
+    font-size: 12px;
+    text-align: center;
+    margin-left: 8px;
+    margin-right: 8px;
+    padding: 4px 4px;
+  }
+
+  .playGoal button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin-bottom: 8px;
+  }
+
+  .player-section {
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 4px;
+    border-style: ridge;
+  }
+
+  .player-section p {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 14px;
+  }
+
+  .player-section input[type="number"],
+  input[type="text"] {
+    width: 85%;
+    font-size: 14px;
+  }
+
+  .inplayer-points {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+    width: 100%;
+  }
+
+  .inplayer-points button {
+    margin: 5px;
+    padding: 4px 4px;
+    font-size: 14px;
+    width: 90%;
+  }
+
+  th {
+    padding: 1px;
+    text-align: center;
+    font-size: 14px;
+  }
+
+  td {
+    padding: 1px;
+    text-align: center;
+    font-size: 14px;
+  }
+
+  button {
+    margin: 5px;
+    padding: 4px 4px;
+    font-size: 14px;
+  }
+
+  
+.foul-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+
+.fouls-reset {
+  width: 92%;
+ 
+}
+
+.fouls-reset button { 
+ height: 24px;  
+ font-size: 14px; 
+}
+
+.fouls-reset span {  
+  font-size: 14px;  
+  height: 9px;
+}
+
+
+.fouls-reset p{
+  align-items: center;
+  padding: 0px 0px;
+  margin: 0px;
+}
+
+.fouls-reset button:hover {
+  background-color: #0056b3;
+}
+
+.foul-section span {
+  border: #007BFF solid 1px;
+  border-radius: 4px;
+  padding: 8px 8px;
+  background-color: white;
+}
+
+.foul-section button {
+  background-color: red;
+}
+}
+
+@media (max-width: 480px) {
+  .container {    
+    padding: 5px;
+    border-radius: 10px;
+  }
+
+  .description {    
+    width: 250px;
+    font-size: 10px;
+    padding: 16px;
+   
+  }
+
+  .shooters_logo {
+    width: 80%;
+  }
+
+  .header-headline {
+    font-size: 12px;
+    margin-bottom: 4px;
+  }
+
+  .header-headline h1 {
+    margin-bottom: 0px;
+    margin-top: 8px;
+  }
+
+.menu-icon {
+    margin-left: 16px;
+    margin-bottom: 0px;
+  }
+  .close-icon {
+    font-size: 12px;    
+    margin-bottom: 0px;
+  }
+
+  .bar {
+    height: 2px;
+  }
+
+  .playGoal {
+    margin-top: 4px;
+    font-size: 10px;
+  }
+  .playGoal button {
+    font-size: 10px;
+  }
+  .playGoal input[type="number"] {
+    width: 30px;
+    font-size: 12px;
+    text-align: center;    
+    padding: 2px 2px;
+  }
+
+  input[type="number"],
+  input[type="text"] {
+    width: 85%;
+    font-size: 12px;
+    padding: 4px;
+  }
+
+
+  .player-section {
+    margin-top: 4px;
+    padding: 5px;
+    border-radius: 4px;
+    border-style: ridge;
+  }
+
+  .player-section p {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 12px;
+  }
+
+  .player-section input[type="number"],
+  input[type="text"] {
+    width: 85%;
+    font-size: 12px;
+  }
+
+  .inplayer-points {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 12px;
+    width: 100%;
+  }
+
+  
+.foul-section span {
+  border: #007BFF solid 1px;
+  border-radius: 4px;
+  padding: 4px 4px;
+  background-color: white;
+}
+
+.foul-section button {
+  background-color: red;
+}
+
+  .inplayer-points button {
+    margin: 5px;
+    padding: 2px 8px;
+    font-size: 12px;
+    width: 90%;
+    height: 25px;
+  }
+
+  th {
+    padding: 1px;
+    text-align: center;
+    font-size: 12px;
+  }
+
+  td {
+    padding: 1px;
+    text-align: center;
+    font-size: 10px;
+  }
+
+  button {
+    margin: 5px;
+    padding: 4px 4px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 320px) {
+ 
+  .container {   
+    width: 250px; 
+    padding: 5px;
+    border-radius: 10px;
+  }
+
+  .description {   
+    width: 90%; 
+    font-size: 12px;    
+    display: flex;  
+    flex-direction: column;
+     align-items: center;
+  }
+
+  .description h1 {
+    font-size: 14px;
+    font-weight: bold;
+   
+  }
+
+  .table {
+    width: 80%;
+    margin-top: 10px;
+   
+  }
+
+  .shooters_logo {
+    width: 80%;
+  }
+
+  .header-headline {
+    font-size: 12px;
+    margin-bottom: 4px;
+  }
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Straight Pool Berechnung</title>
+
+    <!-- <link rel="stylesheet" crossorigin href="/scr/index-Z4rGmmZg.css"> -->
+    <link rel="stylesheet" href="./straightpool.css">
+</head>
+
+<body>
+
+<div class="container">
+    <div class="header">
+
+            <div class="header-logo">
+                <img src="./img/emder_billard_club-logo.png" alt="Straight Pool Logo" class="shooters_logo">
+            </div>
+
+            <div class="header-headline">
+            <h1>Anleitung</h1>
+            </div>
+
+            <div class="menu-icon" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+
+            <nav id="navLinks" class="nav-links">
+                <div class="close-icon" onclick="closeMenu()">
+                    <a href="index.html">Home</a>
+                    <a href="rulesandhistory.html">Geschichte & Regeln</a>
+                    <a href="#" onclick="saveResult()">Ergebnis speichern</a>
+                    <a href="description.html">Anleitung</a>
+                    <a href="mailto:detlef.pabst@gmail.com?subject=Feedback%20zur%20Straight%20Pool%20App&body=Hallo,%20ich%20möchte%20Feedback%20zur%20Straight%20Pool%20App%20geben." target="blank">Feedback</a>
+                
+                </div>
+
+            </nav>
+
+    </div>
+        <div class="description"> 
+            <ul>
+                <li><h2>Zielpunkte:</h2>
+                    <ul>
+                        <li>Geben Sie hier die Punktzahl ein, die ein Spieler erreichen muss, um das Spiel zu gewinnen.</li>
+                    </ul>
+                <li><h2>Aufnahmen:</h2>
+                    <ul>
+                        <li>Legen Sie hier die maximale Anzahl der Aufnahmen fest, die gespielt werden sollen.</li>
+                    </ul>
+                <li><h2>Spieler 1 / 2:</h2>
+                    <ul>
+                        <li>Geben Sie hier den Namen des ersten Spielers ein.</li>
+                    </ul>
+                <li><h2>Eingabefeld: Punkte:</h2>
+                    <ul>
+                        <li>Hier werden die aktuellen erzielten Punkte des Spielers eingetragen, enweder direkt über die Tasatur oder über die Pfleiltasten im Eingabefeld.</li>
+                        <li>Es ist auch mögöich, im Feld rechts daneben die schon gesamt erzielten Punkt eines Dreiecks einzutragen, sodas durch clicken auf <b>"Rest"</b>, der Restwert den Punkten hinzu addiert wird.</li>
+                    </ul>
+                <li><h2>Aufnahme beenden:</h2>
+                    <ul>
+                        <li>Klicken Sie auf diesen Button, um die Aufnahme des ersten Spielers zu beenden und zum nächsten Spieler zu wechseln.</li>
+                        <li>Erst wenn beide Spieler Ihre Aufnahme beendet haben werden die Punkte in die Ergebnistabelle eingetragen.</li>
+                    </ul>
+                <li><h2>Foul:</h2>
+                    <ul>
+                        <li>Klicken Sie auf diesen Button, um ein Foul für den Spieler zu registrieren.</li>
+                        <li>Bei drei Fouls in folge wird beim dritten mal das Foul plus 15 Punkte abgezogen</li>
+                        <li>Nach drei Fouls startet der Foulzähler wieder bei 1</li>  
+                    </ul>
+                <li><h2>Foul Reset:</h2>
+                    <ul>
+                        <li>Klicken Sie auf diesen Button, um die Fouls des jeweiligen Spielers zurückzusetzen.</li>
+                    </ul> 
+                <li><h2>Ergebnis:</h2>            
+                    <ul>
+                        <li>Klicken Sie auf diesen Button, um den Gewinner basierend auf den aktuellen Punkteständen zu berechnen.</li>
+                        <li>Im Menü als auch im Pop-up-Fenster gibt es die Möglichkeit das Ergebnis in einer Textdatei zu speichern.</li>
+                    </ul>   
+                <li><h2>Zurücksetzen:</h2>      
+                    <ul>
+                        <li>Klicken Sie auf diesen Button, um das Spiel zurückzusetzen und alle Eingabefelder zu leeren.</li>
+                    </ul>         
+                <li><h2>Feedback:</h2>
+                    <ul>
+                        <li>Wenn Sie Feedback oder Fragen haben, können Sie uns gerne kontaktieren. Einfach im Menü auf Feedback klicken</li>                    
+                    </ul>                    
+            </ul>
+        </div>
+        <div class="controls">
+            <button><a href="index.html">Home</a></button>
+        </div>    
+
+</div>
+            <script src="./straightpool.js"></script>
+
+</body>
+
+</html>

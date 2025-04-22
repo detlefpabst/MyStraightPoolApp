@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Straight Pool Berechnung</title>
+    <link rel="stylesheet" href="./straightpool.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header-logo">
+                <img src="./img/emder_billard_club-logo.png" alt="Straight Pool Logo" class="shooters_logo">
+            </div>
+            <div class="header-headline">
+                <h1>Ergebnis</h1>
+            </div>
+            <div class="menu-icon" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <nav id="navLinks" class="nav-links">
+                <div class="close-icon" onclick="closeMenu()">
+                    <a href="index.html">Home</a>
+                    <a href="rulesandhistory.html">Geschichte & Regeln</a>
+                    <a href="#" onclick="saveResult()">Ergebnis speichern</a>
+                    <a href="description.html">Anleitung</a>
+                    <a href="mailto:detlef.pabst@gmail.com?subject=Feedback%20zur%20Straight%20Pool%20App&body=Hallo,%20ich%20möchte%20Feedback%20zur%20Straight%20Pool%20App%20geben.">Feedback</a>
+                </div>
+            </nav>
+        </div>
+        <h1 id="winnerName">Winner: </h1>
+        <h2 id="loserName">Loser: </h2>
+        <p id="player1AveragePoints"></p>
+        <p id="player1HighestSeries"></p>
+        <p id="player2AveragePoints"></p>
+        <p id="player2HighestSeries"></p>      
+        <div class="controls">
+            <button><a href="index.html">Home</a></button>
+            <button onclick="window.print()">Drucken</button>
+            <button onclick="saveResult()">Ergebnis speichern</button>
+        </div>
+    </div>
+    <script>
+        console.log(localStorage.getItem("winnerName"));
+        console.log(localStorage.getItem("loserName"));
+        console.log(localStorage.getItem("player1AveragePoints"));
+        console.log(localStorage.getItem("player1HighestSeries"));
+        console.log(localStorage.getItem("player2AveragePoints"));
+        console.log(localStorage.getItem("player2HighestSeries"));
+
+        document.getElementById("winnerName").innerText = `Winner: ${localStorage.getItem("winnerName")}`;
+        document.getElementById("loserName").innerText = `Loser: ${localStorage.getItem("loserName")}`;
+        document.getElementById("player1AveragePoints").innerText = localStorage.getItem("player1AveragePoints");
+        document.getElementById("player1HighestSeries").innerText = localStorage.getItem("player1HighestSeries");
+        document.getElementById("player2AveragePoints").innerText = localStorage.getItem("player2AveragePoints");
+        document.getElementById("player2HighestSeries").innerText = localStorage.getItem("player2HighestSeries");
+    </script>
+    <script src="./straightpool.js"></script>
+</body>
+</html>
